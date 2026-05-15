@@ -1,0 +1,300 @@
+/* Variáveis para fácil personalização */
+:root {
+    --bg-color: #0f0f0f;        /* Preto profundo estilo Netflix/Prime */
+    --card-bg: #1a1a1a;
+    --accent-color: #e50914;    /* Vermelho clássico de streaming */
+    --text-main: #ffffff;
+    --text-muted: #a3a3a3;
+    --header-bg: rgba(0, 0, 0, 0.9);
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+/* Utilitários */
+.hidden { display: none !important; }
+
+/* --- TELA DE LOGIN --- */
+.overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle, #2b2b2b 0%, #000000 100%);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 2000;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 60px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login-box h2 { margin-bottom: 25px; font-size: 32px; font-weight: bold; }
+
+.login-box input {
+    display: block; width: 100%; padding: 15px; margin: 15px 0;
+    background: #333; border: none; color: white; border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-box button {
+    width: 100%; padding: 15px; background: var(--accent-color);
+    border: none; color: white; font-weight: bold; font-size: 16px;
+    cursor: pointer; border-radius: 4px; margin-top: 20px;
+}
+
+.error { color: #e87c03; font-size: 14px; margin-top: 10px; }
+
+/* --- HEADER --- */
+header {
+    background: var(--header-bg);
+    padding: 15px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background 0.5s;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: var(--accent-color);
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+/* Busca Estilo Streaming */
+.search-bar {
+    display: flex;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #444;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 0 20px;
+    flex-grow: 0.5;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Logout */
+.logout-btn {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--text-muted);
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    color: white;
+    border-color: white;
+}
+
+/* --- VITRINE DE VÍDEOS --- */
+main { padding: 20px 4%; }
+
+.category-section { margin-bottom: 50px; }
+
+.category-section h2 {
+    font-size: 1.4vw;
+    color: #e5e5e5;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+.video-card {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.08);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.video-card img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+}
+
+.video-card h3 {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    width: 100%;
+    padding: 20px 10px 10px;
+    margin: 0;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.video-card:hover h3 { opacity: 1; }
+
+/* --- PLAYER MODAL --- */
+#player-modal {
+    background: rgba(0,0,0,0.95);
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 1100px;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#modal-title {
+    padding: 20px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2100;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    /* Ajustamos o cabeçalho para ter 2 linhas em vez de 1 */
+    .header-content {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* O logo ocupa o topo esquerdo */
+    .logo-area { flex: 0 0 50%; }
+
+    /* O botão Sair ocupa o topo direito */
+    .user-menu { flex: 0 0 40%; }
+
+    /* A barra de busca agora aparece abaixo de tudo, ocupando 100% da largura */
+    .search-bar {
+        display: flex !important; /* Força a barra a aparecer */
+        flex: 0 0 100%;
+        order: 3;
+        margin: 0;
+    }
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Empurra os itens para as pontas */
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.logo-area {
+    flex: 1; /* Garante espaço à esquerda */
+}
+
+.search-bar {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #333;
+    border-radius: 4px; /* Estilo mais Netflix que o redondo anterior */
+    padding: 5px 10px;
+    flex: 2; /* Dá mais espaço para a barra de busca no centro */
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.user-menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Garante que o botão Sair fique na ponta direita */
+}
+
+/* Ajuste para o input de busca não sumir */
+.search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+}
+/* --- PLAYER MODAL AMPLIADO --- */
+.modal-content {
+    width: 95%; /* Aumentado de 90% para 95% */
+    max-width: 1400px; /* Limite maior para telas grandes */
+    background: #000;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
+    height: 0;
+    background: #000;
+}
+
+#video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
