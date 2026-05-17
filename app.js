@@ -110,31 +110,21 @@ document.getElementById('search-btn').addEventListener('click', () => {
     renderVideos(filtered);
 });
 
+// Player Logic
 function openPlayer(link, titulo) {
     const modal = document.getElementById('player-modal');
     const wrapper = document.getElementById('video-wrapper');
     document.getElementById('modal-title').innerText = titulo;
 
+    // Converte links normais do YouTube para Embed se necessário
     let embedUrl = link;
     if(link.includes('youtube.com/watch?v=')) {
         embedUrl = link.replace('watch?v=', 'embed/');
     }
 
-    // Usamos o "allow" para liberar o que o vídeo precisa e removemos o sandbox restritivo
-    wrapper.innerHTML = `
-        <div class="video-container-wrapper">
-            <div class="player-shield"></div>
-            <iframe 
-                src="${embedUrl}" 
-                frameborder="0" 
-                allowfullscreen 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-            </iframe>
-        </div>
-    `;
+    wrapper.innerHTML = `<iframe src="${embedUrl}" frameborder="0" allowfullscreen></iframe>`;
     modal.classList.remove('hidden');
 }
-
 
 function closePlayer() {
     document.getElementById('player-modal').classList.add('hidden');
