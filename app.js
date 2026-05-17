@@ -110,7 +110,6 @@ document.getElementById('search-btn').addEventListener('click', () => {
     renderVideos(filtered);
 });
 
-// Player Logic
 function openPlayer(link, titulo) {
     const modal = document.getElementById('player-modal');
     const wrapper = document.getElementById('video-wrapper');
@@ -121,8 +120,7 @@ function openPlayer(link, titulo) {
         embedUrl = link.replace('watch?v=', 'embed/');
     }
 
-    // Criamos o HTML com a camada protetora (shield)
-    // O sandbox abaixo é restritivo e impede o redirecionamento (top-navigation)
+    // Usamos o "allow" para liberar o que o vídeo precisa e removemos o sandbox restritivo
     wrapper.innerHTML = `
         <div class="video-container-wrapper">
             <div class="player-shield"></div>
@@ -130,14 +128,13 @@ function openPlayer(link, titulo) {
                 src="${embedUrl}" 
                 frameborder="0" 
                 allowfullscreen 
-                sandbox="allow-scripts allow-same-origin allow-presentation allow-forms">
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
             </iframe>
         </div>
     `;
     modal.classList.remove('hidden');
 }
-lassList.remove('hidden');
-}
+
 
 function closePlayer() {
     document.getElementById('player-modal').classList.add('hidden');
