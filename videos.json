@@ -1,8 +1,14 @@
 [
     {
         "titulo": "Michael Jackson Live At Wembley 1988",
-        "capa": "https://i.ytimg.com/vi/9shByOh8fVE/sddefault.jpg",
+        "capa": "https://i.ytimg.com/vi/9shByOh8fVE/hqdefault.jpg",
         "link": "https://www.youtube.com/embed/9shByOh8fVE",
+        "categoria": "Música"
+    },
+    {
+        "titulo": "Michael Jackson - Live In Bucharest 1992",
+        "capa": "https://i1.ytimg.com/vi/Hxgo-Qu-ZZE/hqdefault.jpg",
+        "link": "https://www.youtube.com/embed/Hxgo-Qu-ZZE",
         "categoria": "Música"
     },
     {
