@@ -12,6 +12,18 @@
         "categoria": "Música"
     },
     {
+        "titulo": "Michael Jackson - Beat It",
+        "capa": "https://i1.ytimg.com/vi/oRdxUFDoQe0/hqdefault.jpg",
+        "link": "https://www.youtube.com/embed/oRdxUFDoQe0",
+        "categoria": "Música"
+    },
+    {
+        "titulo": "Michael Jackson - They Don't Care About Us",
+        "capa": "https://i1.ytimg.com/vi/QNJL6nfu__Q/hqdefault.jpg",
+        "link": "https://www.youtube.com/embed/QNJL6nfu__Q",
+        "categoria": "Música"
+    },
+    {
         "titulo": "Michael Jackson Home Movies",
         "capa": "https://i.ytimg.com/vi/-L1R3qTolKA/maxresdefault.jpg",
         "link": "https://archive.org/embed/michael-jacksons-private-home-movies-2003/Michael%20Jacksons%20Private%20Home%20Movies%20-%202003.mp4",
