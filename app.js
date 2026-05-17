@@ -116,14 +116,27 @@ function openPlayer(link, titulo) {
     const wrapper = document.getElementById('video-wrapper');
     document.getElementById('modal-title').innerText = titulo;
 
-    // Converte links normais do YouTube para Embed se necessário
     let embedUrl = link;
     if(link.includes('youtube.com/watch?v=')) {
         embedUrl = link.replace('watch?v=', 'embed/');
     }
 
-    wrapper.innerHTML = `<iframe src="${embedUrl}" frameborder="0" allowfullscreen></iframe>`;
+    // Criamos o HTML com a camada protetora (shield)
+    // O sandbox abaixo é restritivo e impede o redirecionamento (top-navigation)
+    wrapper.innerHTML = `
+        <div class="video-container-wrapper">
+            <div class="player-shield"></div>
+            <iframe 
+                src="${embedUrl}" 
+                frameborder="0" 
+                allowfullscreen 
+                sandbox="allow-scripts allow-same-origin allow-presentation allow-forms">
+            </iframe>
+        </div>
+    `;
     modal.classList.remove('hidden');
+}
+lassList.remove('hidden');
 }
 
 function closePlayer() {
