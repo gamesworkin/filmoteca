@@ -24,6 +24,36 @@
         "categoria": "Música"
     },
     {
+        "titulo": "Michael Jackson - Leave Me Alone",
+        "capa": "https://i1.ytimg.com/vi/crbFmpezO4A/hqdefault.jpg",
+        "link": "https://www.youtube.com/embed/crbFmpezO4A",
+        "categoria": "Música"
+    },
+    {
+        "titulo": "Michael Jackson - Billie Jean",
+        "capa": "https://i1.ytimg.com/vi/Zi_XLOBDo_Y/hqdefault.jpg",
+        "link": "https://www.youtube.com/embed/Zi_XLOBDo_Y",
+        "categoria": "Música"
+    },
+    {
+        "titulo": "Michael Jackson - Don't Stop 'Til You Get Enough",
+        "capa": "https://i1.ytimg.com/vi/yURRmWtbTbo/hqdefault.jpg",
+        "link": "https://www.youtube.com/embed/yURRmWtbTbo",
+        "categoria": "Música"
+    },
+    {
+        "titulo": "Michael Jackson - You Are Not Alone",
+        "capa": "https://i1.ytimg.com/vi/pAyKJAtDNCw/hqdefault.jpg",
+        "link": "https://www.youtube.com/embed/pAyKJAtDNCw",
+        "categoria": "Música"
+    },
+    {
+        "titulo": "Michael Jackson, Janet Jackson - Scream",
+        "capa": "https://i1.ytimg.com/vi/0P4A1K4lXDo/hqdefault.jpg",
+        "link": "https://www.youtube.com/embed/0P4A1K4lXDo",
+        "categoria": "Música"
+    },
+    {
         "titulo": "Michael Jackson Home Movies",
         "capa": "https://i.ytimg.com/vi/-L1R3qTolKA/maxresdefault.jpg",
         "link": "https://archive.org/embed/michael-jacksons-private-home-movies-2003/Michael%20Jacksons%20Private%20Home%20Movies%20-%202003.mp4",
