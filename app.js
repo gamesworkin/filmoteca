@@ -1,5 +1,5 @@
 const CREDENTIALS = { user: "admin", pass: "admin123" };
-const SESSION_TIMEOUT = 30 * 60 * 1000;
+const SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutos
 
 let allVideos = [];
 let currentPlaylist = [];
@@ -9,7 +9,6 @@ function getSafeTitle(v) { return v.título || v.titulo || "Sem Título"; }
 
 document.addEventListener("DOMContentLoaded", () => {
     checkSession();
-
     const sidebar = document.getElementById("sidebar");
     document.getElementById("toggle-menu").addEventListener("click", () => sidebar.classList.toggle("collapsed"));
 
@@ -20,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             (v.categoria || "").toLowerCase().includes(term) || 
             (v.subcategoria || "").toLowerCase().includes(term)
         );
-        renderGrid(filtered, "Pesquisa: " + term);
+        renderGrid(filtered, "Busca: " + term);
     });
 
     document.getElementById("login-form").addEventListener("submit", (e) => {
@@ -102,7 +101,7 @@ function resetHome() {
     renderGrid(allVideos, 'Início');
 }
 
-// RENDERIZAÇÃO EM MOSAICO HORIZONTAL
+// NÍVEL 1: RENDERIZA CATEGORIAS
 function renderGrid(videos, title) {
     document.getElementById("current-view-title").innerText = title;
     const grid = document.getElementById("categories-grid");
@@ -131,11 +130,10 @@ function renderGrid(videos, title) {
 
         card.onclick = () => {
             const isHidden = subContainer.classList.contains("hidden");
-            // Fecha outros abertos se quiser manter um mosaico limpo
             document.querySelectorAll(".expanded-container").forEach(el => el.classList.add("hidden"));
             
             if(isHidden) {
-                renderSubMosaic(vids, subContainer);
+                renderSubcategoriesInBody(vids, subContainer);
                 subContainer.classList.remove("hidden");
             }
         };
@@ -145,8 +143,12 @@ function renderGrid(videos, title) {
     }
 }
 
-function renderSubMosaic(videos, container) {
-    container.innerHTML = "";
+// NÍVEL 2: RENDERIZA SUBCATEGORIAS (AINDA RECOLHIDAS)
+function renderSubcategoriesInBody(videos, container) {
+    container.innerHTML = `<div class="exp-title">Subcategorias</div>`;
+    const subGrid = document.createElement("div");
+    subGrid.className = "sub-mosaic-grid";
+
     const subs = {};
     videos.forEach(v => {
         const s = v.subcategoria || "Geral";
@@ -156,33 +158,63 @@ function renderSubMosaic(videos, container) {
 
     for(let sName in subs) {
         const sVids = subs[sName];
-        const subWrapper = document.createElement("div");
-        subWrapper.style.marginBottom = "20px";
-        subWrapper.innerHTML = `<h3 style="font-size:12px; margin-bottom:10px; color:var(--accent)">${sName}</h3>`;
-        
-        const videoMosaic = document.createElement("div");
-        videoMosaic.className = "videos-mosaic";
+        const sCard = document.createElement("div");
+        sCard.className = "mosaic-card";
+        sCard.innerHTML = `
+            <img src="${sVids[0].capa}" class="card-thumb">
+            <div class="card-info">
+                <h2>${sName}</h2>
+                <p>${sVids.length} itens</p>
+            </div>
+        `;
 
-        sVids.forEach(vid => {
-            const vCard = document.createElement("div");
-            vCard.className = "video-card";
-            vCard.innerHTML = `
-                <img src="${vid.capa}" class="card-thumb">
-                <div class="video-info">${getSafeTitle(vid)}</div>
-            `;
-            vCard.onclick = (e) => { e.stopPropagation(); openPlayer(vid, sVids); };
-            videoMosaic.appendChild(vCard);
-        });
+        const videoContainer = document.createElement("div");
+        videoContainer.className = "expanded-container hidden";
+        videoContainer.style.background = "#050505";
 
-        subWrapper.appendChild(videoMosaic);
-        container.appendChild(subWrapper);
+        sCard.onclick = (e) => {
+            e.stopPropagation();
+            const isHidden = videoContainer.classList.contains("hidden");
+            // Fecha outros vídeos expandidos na mesma categoria para não poluir
+            container.querySelectorAll(".expanded-container").forEach(el => el.classList.add("hidden"));
+
+            if(isHidden) {
+                renderVideosInBody(sVids, videoContainer);
+                videoContainer.classList.remove("hidden");
+            }
+        };
+
+        subGrid.appendChild(sCard);
+        subGrid.appendChild(videoContainer);
     }
+    container.appendChild(subGrid);
+}
+
+// NÍVEL 3: RENDERIZA VÍDEOS (GRADE FINAL)
+function renderVideosInBody(videos, container) {
+    container.innerHTML = `<div class="exp-title">Vídeos disponíveis</div>`;
+    const vGrid = document.createElement("div");
+    vGrid.className = "videos-mosaic";
+
+    videos.forEach(vid => {
+        const vCard = document.createElement("div");
+        vCard.className = "mosaic-card";
+        vCard.innerHTML = `
+            <img src="${vid.capa}" class="card-thumb">
+            <div class="card-info">
+                <h2>${getSafeTitle(vid)}</h2>
+            </div>
+        `;
+        vCard.onclick = (e) => { e.stopPropagation(); openPlayer(vid, videos); };
+        vGrid.appendChild(vCard);
+    });
+    container.appendChild(vGrid);
 }
 
 function filterCat(c) { renderGrid(allVideos.filter(v => v.categoria === c), c); }
 function filterSub(c, s) { 
-    // Quando vem do menu lateral, já mostramos expandido
-    renderGrid(allVideos.filter(v => v.categoria === c && v.subcategoria === s), s);
+    const filtered = allVideos.filter(v => v.categoria === c && v.subcategoria === s);
+    renderGrid(filtered, s);
 }
 
 function openPlayer(video, playlist) {
