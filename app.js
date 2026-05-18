@@ -1,4 +1,6 @@
 const CREDENTIALS = { user: "admin", pass: "admin123" };
+const SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutos em milissegundos
+
 let allVideos = [];
 let currentPlaylist = [];
 let currentIndex = -1;
@@ -6,6 +8,8 @@ let currentIndex = -1;
 function getSafeTitle(v) { return v.título || v.titulo || "Sem Título"; }
 
 document.addEventListener("DOMContentLoaded", () => {
+    checkSessionTimeout();
+
     const sidebar = document.getElementById("sidebar");
     document.getElementById("toggle-menu").addEventListener("click", () => sidebar.classList.toggle("collapsed"));
 
@@ -16,27 +20,44 @@ document.addEventListener("DOMContentLoaded", () => {
             (v.categoria || "").toLowerCase().includes(term) || 
             (v.subcategoria || "").toLowerCase().includes(term)
         );
-        renderGrid(filtered, "Busca: " + term);
+        renderGrid(filtered, "Resultado: " + term);
     });
 
     document.getElementById("login-form").addEventListener("submit", (e) => {
         e.preventDefault();
         if(document.getElementById("username").value === CREDENTIALS.user && 
            document.getElementById("password").value === CREDENTIALS.pass) {
-            localStorage.setItem("session", "true");
+            
+            const now = new Date().getTime();
+            localStorage.setItem("session_active", "true");
+            localStorage.setItem("session_start", now);
+            
             initApp();
         } else {
             document.getElementById("login-error").style.display = "block";
         }
     });
 
-    if(localStorage.getItem("session") === "true") initApp();
-    
-    document.getElementById("btn-logout").addEventListener("click", () => {
-        localStorage.clear();
-        location.reload();
-    });
+    if(localStorage.getItem("session_active") === "true") initApp();
 });
+
+// Lógica de Expiração de Login
+function checkSessionTimeout() {
+    const sessionStart = localStorage.getItem("session_start");
+    if (sessionStart) {
+        const now = new Date().getTime();
+        if (now - sessionStart > SESSION_TIMEOUT) {
+            logout();
+        }
+    }
+}
+
+function logout() {
+    localStorage.clear();
+    location.reload();
+}
+
+document.getElementById("btn-logout").addEventListener("click", logout);
 
 async function initApp() {
     document.getElementById("login-screen").classList.add("hidden");
@@ -58,7 +79,7 @@ async function initApp() {
     }
 }
 
-// SIDEBAR COM EXPANSÃO/RECOLHIMENTO
+// Menu Lateral: Apenas navega se clicar.
 function buildSidebar(videos) {
     const menu = document.getElementById("sidebar-menu");
     const cats = [...new Set(videos.map(v => v.categoria).filter(Boolean))];
@@ -82,17 +103,16 @@ function buildSidebar(videos) {
             li.innerText = sub;
             li.onclick = (e) => {
                 e.stopPropagation();
+                // Apenas renderiza no corpo se CLICAR na subcategoria
                 filterSub(cat, sub);
             };
             subList.appendChild(li);
         });
 
         catBtn.onclick = () => {
-            const isHidden = subList.classList.contains("hidden");
-            // Fecha outros grupos se quiser (opcional), aqui vamos apenas alternar o atual
-            catBtn.classList.toggle("expanded");
             subList.classList.toggle("hidden");
-            // Ao clicar no nome da categoria, também filtra no corpo principal
+            catBtn.classList.toggle("expanded");
+            // Apenas renderiza no corpo se CLICAR na categoria
             filterCat(cat);
         };
 
@@ -107,7 +127,7 @@ function resetToHome() {
     renderGrid(allVideos, 'Início');
 }
 
-// CORPO DO SITE EM CASCATA
+// Renderização Principal do Site
 function renderGrid(videos, title) {
     document.getElementById("current-view-title").innerText = title;
     const grid = document.getElementById("categories-grid");
@@ -128,7 +148,7 @@ function renderGrid(videos, title) {
                 <img src="${catVideos[0].capa}" class="row-cover-preview">
                 <div class="row-info">
                     <h2>${catName}</h2>
-                    <p>${catVideos.length} vídeos — <span class="status-icon">Ver subcategorias <i class="fa-solid fa-chevron-down"></i></span></p>
+                    <p>${catVideos.length} vídeos — <span class="status-icon"><i class="fa-solid fa-chevron-down"></i></span></p>
                 </div>
             </div>
             <div class="sub-container hidden"></div>
@@ -188,7 +208,7 @@ function renderSubRows(videos, container) {
                 sVids.forEach(vid => {
                     const card = document.createElement("div");
                     card.className = "video-card";
-                    card.innerHTML = `<img src="${vid.capa}" class="video-thumb"><div class="video-info">${getSafeTitle(vid)}</div>`;
+                    card.innerHTML = `<img src="${vid.capa}" class="video-thumb"><div class="video-info" title="${getSafeTitle(vid)}">${getSafeTitle(vid)}</div>`;
                     card.onclick = (ev) => { ev.stopPropagation(); openPlayer(vid, sVids); };
                     vGrid.appendChild(card);
                 });
