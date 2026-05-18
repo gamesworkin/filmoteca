@@ -4,36 +4,14 @@
         "capa": "https://i.ytimg.com/vi/9shByOh8fVE/hqdefault.jpg",
         "link": "https://www.youtube.com/embed/9shByOh8fVE",
         "categoria": "Música"
+        "subcategoria": "Shows"
     },
     {
         "titulo": "Michael Jackson - Live In Bucharest 1992",
         "capa": "https://i1.ytimg.com/vi/Hxgo-Qu-ZZE/hqdefault.jpg",
         "link": "https://www.youtube.com/embed/Hxgo-Qu-ZZE",
         "categoria": "Música"
-    },
-    {
-        "titulo": "Michael Jackson - Beat It",
-        "capa": "https://i1.ytimg.com/vi/oRdxUFDoQe0/hqdefault.jpg",
-        "link": "https://www.youtube.com/embed/oRdxUFDoQe0",
-        "categoria": "Música"
-    },
-    {
-        "titulo": "Michael Jackson - They Don't Care About Us",
-        "capa": "https://i1.ytimg.com/vi/QNJL6nfu__Q/hqdefault.jpg",
-        "link": "https://www.youtube.com/embed/QNJL6nfu__Q",
-        "categoria": "Música"
-    },
-    {
-        "titulo": "Michael Jackson - Leave Me Alone",
-        "capa": "https://i1.ytimg.com/vi/crbFmpezO4A/hqdefault.jpg",
-        "link": "https://www.youtube.com/embed/crbFmpezO4A",
-        "categoria": "Música"
-    },
-    {
-        "titulo": "Michael Jackson - Billie Jean",
-        "capa": "https://i1.ytimg.com/vi/Zi_XLOBDo_Y/hqdefault.jpg",
-        "link": "https://www.youtube.com/embed/Zi_XLOBDo_Y",
-        "categoria": "Música"
+        "subcategoria": "Shows"
     },
     {
         "titulo": "Michael Jackson - Don't Stop 'Til You Get Enough",
@@ -42,645 +20,676 @@
         "categoria": "Música"
     },
     {
-        "titulo": "Michael Jackson - You Are Not Alone",
-        "capa": "https://i1.ytimg.com/vi/pAyKJAtDNCw/hqdefault.jpg",
-        "link": "https://www.youtube.com/embed/pAyKJAtDNCw",
-        "categoria": "Música"
-    },
-    {
-        "titulo": "Michael Jackson, Janet Jackson - Scream",
-        "capa": "https://i1.ytimg.com/vi/0P4A1K4lXDo/hqdefault.jpg",
-        "link": "https://www.youtube.com/embed/0P4A1K4lXDo",
-        "categoria": "Música"
-    },
-    {
         "titulo": "Michael Jackson Home Movies",
         "capa": "https://i.ytimg.com/vi/-L1R3qTolKA/maxresdefault.jpg",
         "link": "https://archive.org/embed/michael-jacksons-private-home-movies-2003/Michael%20Jacksons%20Private%20Home%20Movies%20-%202003.mp4",
         "categoria": "Música"
+        "subcategoria": "Programa de TV"
     },
     {
         "titulo": "MTV All Nighter: Michael Jackson Music Videos",
         "capa": "https://archive.org/download/MichaelJackson-MTVallnighter/__ia_thumb.jpg",
         "link": "https://archive.org/embed/MichaelJackson-MTVallnighter/DaneTV%20-%20MTV%20All%20Michael.mp4",
         "categoria": "Música"
+        "subcategoria": "Programa de TV"
     },
-    {
-        "titulo": "Michael Jaxkson - Smooth Criminal",
-        "capa": "https://i.ytimg.com/vi/h_D3VFfhvs4/maxresdefault.jpg",
-        "link": "https://www.youtube.com/embed/h_D3VFfhvs4",
-        "categoria": "Música"
-    },
-    {
-    "titulo": "GTA 5 com MODS - #1: Los Santos mais bonita que nunca!",
-    "capa": "https://i.ytimg.com/vi/hLliUlUHL20/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/hLliUlUHL20",
-    "categoria": "GTA 5 Modo História com MODS"
-  },
-  {
-    "titulo": "GTA 5 com MODS - #2: Ballas e Vagos",
-    "capa": "https://i.ytimg.com/vi/C4CB4DB66qs/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/C4CB4DB66qs",
-    "categoria": "GTA 5 Modo História com MODS"
-  },
-  {
-    "titulo": "GTA 5 com MODS - #3: Nunca Tente Roubar um Ladrão",
-    "capa": "https://i.ytimg.com/vi/2mshxijKY-M/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/2mshxijKY-M",
-    "categoria": "GTA 5 Modo História com MODS"
-  },
-  {
-    "titulo": "GTA 5 com MODS - #4: Treta com o Chefe do Cartel",
-    "capa": "https://i.ytimg.com/vi/Ly-n7sGuvtw/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/Ly-n7sGuvtw",
-    "categoria": "GTA 5 Modo História com MODS"
-  },
-  {
-    "titulo": "GTA 5 com MODS - #5: Levando as Cria pra Passear",
-    "capa": "https://i.ytimg.com/vi/x4hQx4W2XEw/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/x4hQx4W2XEw",
-    "categoria": "GTA 5 Modo História com MODS"
-  },
-  {
-    "titulo": "GTA 5 com MODS - #6: Sabotagem na Life Invader",
-    "capa": "https://i.ytimg.com/vi/PKc2J0Bo1sk/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/PKc2J0Bo1sk",
-    "categoria": "GTA 5 Modo História com MODS"
-  },
-  {
-    "titulo": "GTA 5 com MODS - #7: AQUELA Missão do Fotógrafo",
-    "capa": "https://i.ytimg.com/vi/PZ7BzBl2HRI/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/PZ7BzBl2HRI",
-    "categoria": "GTA 5 Modo História com MODS"
-  },
-  {
-    "titulo": "GTA 5 com MODS - #8: Espionagem na Loja de Joias!",
-    "capa": "https://i.ytimg.com/vi/ja3Z-Mv4j3o/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/ja3Z-Mv4j3o",
-    "categoria": "GTA 5 Modo História com MODS"
-  },
   {
-    "titulo": "GTA 5 com MODS - #9: O Primeiro Golpe com os Piores Ladrões!",
-    "capa": "https://i.ytimg.com/vi/BCrYyePExyI/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/BCrYyePExyI",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - INÍCIO: A Nova Obra-Prima da Rockstar!",
+    "capa": "https://i.ytimg.com/vi/GjS1e9cz5PY/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/GjS1e9cz5PY",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #10: Introdução SEM PIEDADE do Trevor!",
-    "capa": "https://i.ytimg.com/vi/Tb9j06X0Xfk/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/Tb9j06X0Xfk",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #2: Caçando na Neve!",
+    "capa": "https://i.ytimg.com/vi/ADq-3NTqczk/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/ADq-3NTqczk",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #11: Assalto às Pistas de Pouso",
-    "capa": "https://i.ytimg.com/vi/e3mvUAzX_J4/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/e3mvUAzX_J4",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #3: O Velho Oeste! Gangues, Brigas de Bar, Xerifes e Brucutus!",
+    "capa": "https://i.ytimg.com/vi/-d12Wg3TLhY/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/-d12Wg3TLhY",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #12: Trevor Lida com a Concorrência",
-    "capa": "https://i.ytimg.com/vi/pGX2oVgwAWI/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/pGX2oVgwAWI",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #4: Caça a Recompensas, Fuga da \"Polícia\" e Tunagem de Cavalo!",
+    "capa": "https://i.ytimg.com/vi/rH-NQGgS8yI/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/rH-NQGgS8yI",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #13: O Reencontro dos Amigão",
-    "capa": "https://i.ytimg.com/vi/VxdYFBMs144/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/VxdYFBMs144",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #5: A Cidade Proibida!",
+    "capa": "https://i.ytimg.com/vi/9A0sRrlSB-U/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/9A0sRrlSB-U",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #14: Meus Problemas são Seus Problemas",
-    "capa": "https://i.ytimg.com/vi/JX9PndauRtE/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/JX9PndauRtE",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #6: Encontrei uma Trapaça Escondida!",
+    "capa": "https://i.ytimg.com/vi/cZ7iuGgWpkU/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/cZ7iuGgWpkU",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #15: A Primeira Missão com os Três!",
-    "capa": "https://i.ytimg.com/vi/jjRZV9YHPmI/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/jjRZV9YHPmI",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #7: Encontrei os Terraplanistas",
+    "capa": "https://i.ytimg.com/vi/7Zqhf4v7x4I/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/7Zqhf4v7x4I",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #16: Essa missão é MUITO pesada!",
-    "capa": "https://i.ytimg.com/vi/IcfnGeT3edk/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/IcfnGeT3edk",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #8: Nunca Assalte um Trem Sozinho!",
+    "capa": "https://i.ytimg.com/vi/mx7nWPpC07w/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/mx7nWPpC07w",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #17: DESTRUINDO a Casa do Floyd!",
-    "capa": "https://i.ytimg.com/vi/H_ykJMkD6M0/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/H_ykJMkD6M0",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #9: Peguei um Cavalo Lendário!",
+    "capa": "https://i.ytimg.com/vi/bvkIk5VD-40/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/bvkIk5VD-40",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #18: BAD TRIP",
-    "capa": "https://i.ytimg.com/vi/fxc46XAiVBM/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/fxc46XAiVBM",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #10: Seria esse o TREVOR do Jogo??",
+    "capa": "https://i.ytimg.com/vi/uXD7eR2vogQ/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/uXD7eR2vogQ",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #19: Treta na Grove Street!",
-    "capa": "https://i.ytimg.com/vi/C6eAQBvvg10/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/C6eAQBvvg10",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #11: Chegou a Vez da SNIPER!",
+    "capa": "https://i.ytimg.com/vi/sLCKfTgkjJo/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/sLCKfTgkjJo",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #20: Rolê clássico no Mount Chiliad!",
-    "capa": "https://i.ytimg.com/vi/x6LtEsuyGR0/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/x6LtEsuyGR0",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #12: SIGA O TREM, ARTHUR!",
+    "capa": "https://i.ytimg.com/vi/-HMawGDNfVU/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/-HMawGDNfVU",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #21: Trabalho Sujo do FIB",
-    "capa": "https://i.ytimg.com/vi/zcr4xaVSHEg/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/zcr4xaVSHEg",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #13: As Antepassadas da CATALINA!",
+    "capa": "https://i.ytimg.com/vi/53-gS-Tl7xU/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/53-gS-Tl7xU",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #22: Trabalho Sujo do Devin Weston",
-    "capa": "https://i.ytimg.com/vi/F8RtlOhG6Q0/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/F8RtlOhG6Q0",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #14: Missão Furtiva no Pântano!",
+    "capa": "https://i.ytimg.com/vi/5E3Sgym7gp0/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/5E3Sgym7gp0",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #23: Michael Produtor de Cinema",
-    "capa": "https://i.ytimg.com/vi/ZvlKxXURpSA/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/ZvlKxXURpSA",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #15: Cabana do Luis Sera 2.0",
+    "capa": "https://i.ytimg.com/vi/cqtVW0VU3hQ/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/cqtVW0VU3hQ",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #24: Loucademia de Polícia 4",
-    "capa": "https://i.ytimg.com/vi/6rxY5PUSAiM/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/6rxY5PUSAiM",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #16: O OPEN BAR DO RETARDADO",
+    "capa": "https://i.ytimg.com/vi/ZBZxhoLAUzI/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/ZBZxhoLAUzI",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #25: O Lendário Z-Type",
-    "capa": "https://i.ytimg.com/vi/AFFh1hOicmw/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/AFFh1hOicmw",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #17: O Assalto ao Banco!",
+    "capa": "https://i.ytimg.com/vi/gfAUUKAHofk/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/gfAUUKAHofk",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #26: As missões MAIS ABSURDAS do Jogo!",
-    "capa": "https://i.ytimg.com/vi/VrkHsVPJhH0/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/VrkHsVPJhH0",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #18: Queimando Tudo Mais Uma Vez!!",
+    "capa": "https://i.ytimg.com/vi/XDc6Gtm39nQ/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/XDc6Gtm39nQ",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #27: A Saga do Avião Naufragado",
-    "capa": "https://i.ytimg.com/vi/Sj2B2eS_3T4/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/Sj2B2eS_3T4",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #19: Os Caçadores tão na Pista!!",
+    "capa": "https://i.ytimg.com/vi/lYRPygza98I/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/lYRPygza98I",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #28: Preparando o Golpe em Paleto Bay!",
-    "capa": "https://i.ytimg.com/vi/VzwVcqbwDJk/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/VzwVcqbwDJk",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #20: Imagens de Dor e Sofrimento",
+    "capa": "https://i.ytimg.com/vi/XnB9SuojJhU/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/XnB9SuojJhU",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #29: O Cachorro Fantasma",
-    "capa": "https://i.ytimg.com/vi/t52GJMcX0xY/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/t52GJMcX0xY",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #21: Missão Extremamente Tensa!",
+    "capa": "https://i.ytimg.com/vi/fnLMCDdguO0/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/fnLMCDdguO0",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #30: JAMES BRANKLIN",
-    "capa": "https://i.ytimg.com/vi/361jpQzOs3M/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/361jpQzOs3M",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #22: A Gangue Inteira Reunida!!",
+    "capa": "https://i.ytimg.com/vi/6G6ggO5ViCA/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/6G6ggO5ViCA",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #31: Armados Até os Dentes",
-    "capa": "https://i.ytimg.com/vi/ONAE8s2D0WY/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/ONAE8s2D0WY",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #23: Finalmente na Cidade Grande",
+    "capa": "https://i.ytimg.com/vi/9-y_h0Menb8/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/9-y_h0Menb8",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #32: Caçador de Recompensas",
-    "capa": "https://i.ytimg.com/vi/vkVm5Dm8UvI/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/vkVm5Dm8UvI",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #24: A Caça aos Animais Lendários!",
+    "capa": "https://i.ytimg.com/vi/DBNw4UoL9k0/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/DBNw4UoL9k0",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #33: Trabalho Molhado",
-    "capa": "https://i.ytimg.com/vi/nPlTQdtAfkE/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/nPlTQdtAfkE",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #25: A Festa da Alta Sociedade",
+    "capa": "https://i.ytimg.com/vi/KfWMXP4zWm4/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/KfWMXP4zWm4",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #34: O Último A$$a$$inato",
-    "capa": "https://i.ytimg.com/vi/9bjw70TrWyY/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/9bjw70TrWyY",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #26: Os Easter Eggs me Encontram!!",
+    "capa": "https://i.ytimg.com/vi/KRUyQwpMogA/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/KRUyQwpMogA",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #35: A Despedida do Floyd!",
-    "capa": "https://i.ytimg.com/vi/envY5TJBm1s/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/envY5TJBm1s",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #27: Uma Mensagem MACABRA",
+    "capa": "https://i.ytimg.com/vi/S0dw2xTR-wE/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/S0dw2xTR-wE",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #36: Cai a Ficha do Trevor",
-    "capa": "https://i.ytimg.com/vi/erHag6VB21o/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/erHag6VB21o",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #28: Xitando no Poker ♦♠♥♣",
+    "capa": "https://i.ytimg.com/vi/NHCm_TwzFsY/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/NHCm_TwzFsY",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #37: TOMBÃO",
-    "capa": "https://i.ytimg.com/vi/3Bw0Zfu9IHU/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/3Bw0Zfu9IHU",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #29: Um Assalto Precipitado",
+    "capa": "https://i.ytimg.com/vi/zrDrb1-gYcU/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/zrDrb1-gYcU",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #38: Preparação pro Golpe do FIB!",
-    "capa": "https://i.ytimg.com/vi/xrYOL6b9FcY/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/xrYOL6b9FcY",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #30: GADO DEMAIS",
+    "capa": "https://i.ytimg.com/vi/ngPnsa9vT1I/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/ngPnsa9vT1I",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #39: aLguÉm FaLoU YoOoGa???/",
-    "capa": "https://i.ytimg.com/vi/ZlIZ2uFlYzo/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/ZlIZ2uFlYzo",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #31: Uma Missão \"Red Dead Redemption\"",
+    "capa": "https://i.ytimg.com/vi/1a9tkmCWb8w/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/1a9tkmCWb8w",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #40: O Golpe no Prédio do FIB",
-    "capa": "https://i.ytimg.com/vi/gVNke-GdAlY/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/gVNke-GdAlY",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #32: PÂNICO NO LAGO",
+    "capa": "https://i.ytimg.com/vi/4xZf-PkFoGo/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/4xZf-PkFoGo",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #41: Todos Contra Todos!",
-    "capa": "https://i.ytimg.com/vi/XFucrMuu5KE/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/XFucrMuu5KE",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #33: SÓ TÁ DANDO DESGRAÇA!",
+    "capa": "https://i.ytimg.com/vi/1S0TdgfGyX0/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/1S0TdgfGyX0",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #42: Molly faz \"Corpo Mole\"",
-    "capa": "https://i.ytimg.com/vi/q2kUa7XsavA/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/q2kUa7XsavA",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #34: FAR CRY REDEMPTION",
+    "capa": "https://i.ytimg.com/vi/mLgbNQQpvDA/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/mLgbNQQpvDA",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #43: Fui Obrigado a Rever essa Cena",
-    "capa": "https://i.ytimg.com/vi/IH-ctY-EO-4/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/IH-ctY-EO-4",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #35: DUTCH TÁ FICANDO DOIDO",
+    "capa": "https://i.ytimg.com/vi/5BU48GFFZxc/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/5BU48GFFZxc",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #44: Preparação para o Grandessíssimo Golpe!",
-    "capa": "https://i.ytimg.com/vi/3tve3Jv9yXA/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/3tve3Jv9yXA",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #36: É O MAX! ACERTE O CRETINO!!",
+    "capa": "https://i.ytimg.com/vi/SA3hBK2RPMM/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/SA3hBK2RPMM",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #45: O Último Golpe!",
-    "capa": "https://i.ytimg.com/vi/kYRm_i0wA4E/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/kYRm_i0wA4E",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #37: Uma Missão... Diferente",
+    "capa": "https://i.ytimg.com/vi/bRPx8JbvPjQ/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/bRPx8JbvPjQ",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - #46: FINAL de Novela, só Faltou um Casamento!",
-    "capa": "https://i.ytimg.com/vi/x0TB9XJX8Sk/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/x0TB9XJX8Sk",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #38: CENÁRIO DE TERROR",
+    "capa": "https://i.ytimg.com/vi/qttCtnMG3iQ/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/qttCtnMG3iQ",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - Extras: O Fim do Epsilon",
-    "capa": "https://i.ytimg.com/vi/bjCgO1HG18k/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/bjCgO1HG18k",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #39: O Mais Sanguinário Pistoleiro do Oeste",
+    "capa": "https://i.ytimg.com/vi/vnbd0RwchiE/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/vnbd0RwchiE",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA 5 com MODS - Extras: Os Finais A e B",
-    "capa": "https://i.ytimg.com/vi/1Zj8YTq6v58/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/1Zj8YTq6v58",
-    "categoria": "GTA 5 Modo História com MODS"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #40: O RESGATE",
+    "capa": "https://i.ytimg.com/vi/-JrBRBBL5YQ/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/-JrBRBBL5YQ",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #1: 7 Anos Depois! Ah s#&*, here we go again!",
-    "capa": "https://i.ytimg.com/vi/UnQfX-f5iAc/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/UnQfX-f5iAc",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #41: Nikola Tesla",
+    "capa": "https://i.ytimg.com/vi/cnZLD9XKgis/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/cnZLD9XKgis",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #2: EU QUERO DOIS NÚMERO 9",
-    "capa": "https://i.ytimg.com/vi/i3h8F0K8Pdg/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/i3h8F0K8Pdg",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #42: Se a Canoa Não Virar Olê Olê Olá",
+    "capa": "https://i.ytimg.com/vi/KNyWYmFMcBQ/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/KNyWYmFMcBQ",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #3: É OG LOC mano, OG LOC!",
-    "capa": "https://i.ytimg.com/vi/BT8S602FRDE/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/BT8S602FRDE",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #43: Um Ato MAGNÍFICO de Honra",
+    "capa": "https://i.ytimg.com/vi/sylShMHdJac/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/sylShMHdJac",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #4: EU DESAPRENDI A JOGAR SAN ANDREAS",
-    "capa": "https://i.ytimg.com/vi/BfTdHi8PXrI/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/BfTdHi8PXrI",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #44: Uma Decisão Difícil",
+    "capa": "https://i.ytimg.com/vi/jXW-sIW1vVY/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/jXW-sIW1vVY",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #5: A Missão Perdida dos Weekend Soldiers!!",
-    "capa": "https://i.ytimg.com/vi/_4t_gjoFXqM/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/_4t_gjoFXqM",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #45: Despachando Personagens",
+    "capa": "https://i.ytimg.com/vi/nyNCA20KJ7Q/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/nyNCA20KJ7Q",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #6: AGARAGÃ",
-    "capa": "https://i.ytimg.com/vi/s-JIL8trv0w/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/s-JIL8trv0w",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #46: BRIGA DE PEIXEIRA!",
+    "capa": "https://i.ytimg.com/vi/05YUlfulEEo/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/05YUlfulEEo",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #7: Até mais, Los Santos!",
-    "capa": "https://i.ytimg.com/vi/F_ReRpMADEE/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/F_ReRpMADEE",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #47: O Presságio de Dutch",
+    "capa": "https://i.ytimg.com/vi/pQI65z6jaE4/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/pQI65z6jaE4",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #8: NO MEIO DO NADA!",
-    "capa": "https://i.ytimg.com/vi/6VCJQNwRQsU/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/6VCJQNwRQsU",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #48: A Invasão ao Forte!",
+    "capa": "https://i.ytimg.com/vi/71gMpVjYsWw/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/71gMpVjYsWw",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #9: CJ: Cattle Johnson",
-    "capa": "https://i.ytimg.com/vi/RdDRgIMIW0Y/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/RdDRgIMIW0Y",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #49: O Tão Sonhado Golpe!",
+    "capa": "https://i.ytimg.com/vi/m_Z1V2kWfHc/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/m_Z1V2kWfHc",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #10: EU VO MATA U CARLOS JANSON KK",
-    "capa": "https://i.ytimg.com/vi/MU-QFajgwHc/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/MU-QFajgwHc",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #50: FINAL (?) - A REDENÇÃO",
+    "capa": "https://i.ytimg.com/vi/NHQZr4-4VkY/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/NHQZr4-4VkY",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #11: QUEIMANDO TUDO RELOADED",
-    "capa": "https://i.ytimg.com/vi/tcUd8S1ZnfU/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/tcUd8S1ZnfU",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #51: EPÍLOGO - A Vida Continua",
+    "capa": "https://i.ytimg.com/vi/XNTQd2zAA28/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/XNTQd2zAA28",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #12: AQUELA Missão..... 😨",
-    "capa": "https://i.ytimg.com/vi/5o9glbvMuT8/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/5o9glbvMuT8",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #52: Globo Rural Simulator",
+    "capa": "https://i.ytimg.com/vi/TD0Of4PYt_I/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/TD0Of4PYt_I",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #13: O Demolidor de San Fierro",
-    "capa": "https://i.ytimg.com/vi/xtW0si5z7ig/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/xtW0si5z7ig",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #53: O Cara das Bad News",
+    "capa": "https://i.ytimg.com/vi/pXdO_707GHk/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/pXdO_707GHk",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #14: Videogame Ensina Jovens a Roubar e Choca Emissoras",
-    "capa": "https://i.ytimg.com/vi/tWqS2lFug78/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/tWqS2lFug78",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #54: Descendo a Porrada no \"Trevor\"",
+    "capa": "https://i.ytimg.com/vi/sAsk3bxw0ic/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/sAsk3bxw0ic",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #15: Mike Toreno, tava com saudades!",
-    "capa": "https://i.ytimg.com/vi/oAfYJwzer4Q/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/oAfYJwzer4Q",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #55: Água Preta 2.0",
+    "capa": "https://i.ytimg.com/vi/2L63_wjI15o/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/2L63_wjI15o",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #16: Siga o CJ, trem!",
-    "capa": "https://i.ytimg.com/vi/ENTPwjGZrVE/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/ENTPwjGZrVE",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #56: A Cidade Amaldiçoada",
+    "capa": "https://i.ytimg.com/vi/_RVCGH2p_OI/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/_RVCGH2p_OI",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #17: Um Homem Injustiçado",
-    "capa": "https://i.ytimg.com/vi/7a-ujPCt3I8/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/7a-ujPCt3I8",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #57: LUMBAGO",
+    "capa": "https://i.ytimg.com/vi/yubsfmtyvvI/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/yubsfmtyvvI",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #18: A Vingança do Véio Ninja",
-    "capa": "https://i.ytimg.com/vi/waYKu4n3eqE/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/waYKu4n3eqE",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #58: Um Político à Moda Clássica",
+    "capa": "https://i.ytimg.com/vi/CE6UemMHn_I/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/CE6UemMHn_I",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #19: Exportação Frenética de Carros",
-    "capa": "https://i.ytimg.com/vi/VeuxT37rSSQ/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/VeuxT37rSSQ",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #59: A Melhor Casa do Jogo",
+    "capa": "https://i.ytimg.com/vi/sTEXLQvRbr0/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/sTEXLQvRbr0",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #20: Chegamos no Deserto!",
-    "capa": "https://i.ytimg.com/vi/TbwkpwM1MG8/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/TbwkpwM1MG8",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #60: O Cenário Clássico do RDR",
+    "capa": "https://i.ytimg.com/vi/Us9vuEMoMeI/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/Us9vuEMoMeI",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #21: A Saga da Minigun e o Caminhão-Rampa",
-    "capa": "https://i.ytimg.com/vi/LPO73d5pL18/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/LPO73d5pL18",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #61: REI DO GADO",
+    "capa": "https://i.ytimg.com/vi/-5M9sBHJnp4/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/-5M9sBHJnp4",
+    "categoria": "RED DEAD REDEMPTION 2"
   },
   {
-    "titulo": "GTA San Andreas - #22: Dando Aula de Pilotagem!!",
-    "capa": "https://i.ytimg.com/vi/ze0Km_tMjHI/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/ze0Km_tMjHI",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
-  },
+    "subcategoria": "Gameplays",
+    "titulo": "RED DEAD REDEMPTION 2 - #62: FINAL DEFINITIVO - A Ligação Entre as Histórias",
+    "capa": "https://i.ytimg.com/vi/9s07CAufNnc/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/9s07CAufNnc",
+    "categoria": "RED DEAD REDEMPTION 2"
+  }, 
+
   {
-    "titulo": "GTA San Andreas - #23: #StormArea69 👽",
-    "capa": "https://i.ytimg.com/vi/QMUZjGMzYuI/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/QMUZjGMzYuI",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Don't Stop 'Til You Get Enough (Official Video - Upscaled)",
+    "capa": "https://i.ytimg.com/vi/yURRmWtbTbo/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/yURRmWtbTbo",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #24: Tour de Fast-Food",
-    "capa": "https://i.ytimg.com/vi/vWazfcn7i9E/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/vWazfcn7i9E",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Rock With You (Official Video - Upscaled)",
+    "capa": "https://i.ytimg.com/vi/5X-Mrc2l1d0/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/5X-Mrc2l1d0",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #25: CJ Gordo!",
-    "capa": "https://i.ytimg.com/vi/Gu2HWTZFOy4/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/Gu2HWTZFOy4",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - She's Out of My Life (Official Video - Upscaled)",
+    "capa": "https://i.ytimg.com/vi/6DQJPL9Yuq0/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/6DQJPL9Yuq0",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #26: ⚠️ Gordinho de Havaianas Armado com Flores ⚠️",
-    "capa": "https://i.ytimg.com/vi/8hbrVJSpA2s/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/8hbrVJSpA2s",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Billie Jean (Official Video)",
+    "capa": "https://i.ytimg.com/vi/Zi_XLOBDo_Y/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/Zi_XLOBDo_Y",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #27: Uma História Melhor que 50 Tons de Cinza",
-    "capa": "https://i.ytimg.com/vi/slsI-pnfeCw/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/slsI-pnfeCw",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Beat It (Official 4K Video)",
+    "capa": "https://i.ytimg.com/vi/oRdxUFDoQe0/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/oRdxUFDoQe0",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #28: Projeto Cidinei Fitness 💪🏿",
-    "capa": "https://i.ytimg.com/vi/6aySOX1c_EM/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/6aySOX1c_EM",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Human Nature (Official Music Video)",
+    "capa": "https://i.ytimg.com/vi/_E0tcilfKZQ/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/_E0tcilfKZQ",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #29: A Cidade Mais Bonita do Jogo!",
-    "capa": "https://i.ytimg.com/vi/rJHIlTixne0/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/rJHIlTixne0",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Thriller (Official 4K Video)",
+    "capa": "https://i.ytimg.com/vi/sOnqjkJTMaA/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/sOnqjkJTMaA",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #30: Cosplay de OG Loc",
-    "capa": "https://i.ytimg.com/vi/w6votOgDzMo/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/w6votOgDzMo",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Bad (Official Video)",
+    "capa": "https://i.ytimg.com/vi/Sd4SJVsTulc/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/Sd4SJVsTulc",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #31: Elas Rejeitam o OG Loc 💔",
-    "capa": "https://i.ytimg.com/vi/DzycSA7jLM0/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/DzycSA7jLM0",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "MICHAEL JACKSON - SPEED DEMON",
+    "capa": "https://i.ytimg.com/vi/7Rwbu2FEp4w/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/7Rwbu2FEp4w",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #32: Personagem Secreto Travado",
-    "capa": "https://i.ytimg.com/vi/ySy6cvPKcYk/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/ySy6cvPKcYk",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Man In The Mirror (Official Video)",
+    "capa": "https://i.ytimg.com/vi/PivWY9wn5ps/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/PivWY9wn5ps",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #33: Cosplay de Ryder",
-    "capa": "https://i.ytimg.com/vi/ytb1SwwWqBs/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/ytb1SwwWqBs",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Dirty Diana (Official Video)",
+    "capa": "https://i.ytimg.com/vi/yUi_S6YWjZw/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/yUi_S6YWjZw",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #34: Visitando Liberty City!",
-    "capa": "https://i.ytimg.com/vi/I8ltsdoXtZM/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/I8ltsdoXtZM",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Captain EO - Another Part of Me  (unreleased music video)",
+    "capa": "https://i.ytimg.com/vi/flGvyXNM_EU/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/flGvyXNM_EU",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #35: O Golpe no KASINÃO",
-    "capa": "https://i.ytimg.com/vi/bX4H6BSp9kI/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/bX4H6BSp9kI",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Smooth Criminal (Official Video)",
+    "capa": "https://i.ytimg.com/vi/h_D3VFfhvs4/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/h_D3VFfhvs4",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #36: A Saga do Carro Raríssimo",
-    "capa": "https://i.ytimg.com/vi/METoAvSJ-S4/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/METoAvSJ-S4",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Leave Me Alone (Official Video)",
+    "capa": "https://i.ytimg.com/vi/crbFmpezO4A/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/crbFmpezO4A",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #37: HOLD THE LINE",
-    "capa": "https://i.ytimg.com/vi/KETi0H6zbHc/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/KETi0H6zbHc",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Black or White (Official Video - Upscaled)",
+    "capa": "https://i.ytimg.com/vi/pTFE8cirkdQ/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/pTFE8cirkdQ",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #38: Agostinho Carrara Simulator",
-    "capa": "https://i.ytimg.com/vi/1XVwNTFJ29I/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/1XVwNTFJ29I",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Remember the Time (Official Video - Upscaled)",
+    "capa": "https://i.ytimg.com/vi/LeiFF0gvqcc/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/LeiFF0gvqcc",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #39: Comet Por Todos os Lados",
-    "capa": "https://i.ytimg.com/vi/73okcljNsH0/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/73okcljNsH0",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - In the Closet (Official Video - Upscaled)",
+    "capa": "https://i.ytimg.com/vi/4qLY0vbrT8Q/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/4qLY0vbrT8Q",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #40: San Fierro só tem cliente BABACA!",
-    "capa": "https://i.ytimg.com/vi/x6_-DO14mVg/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/x6_-DO14mVg",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Jam (Official Video - Upscaled)",
+    "capa": "https://i.ytimg.com/vi/JbHI1yI1Ndk/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/JbHI1yI1Ndk",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #41: Pedro e Bino Simulator",
-    "capa": "https://i.ytimg.com/vi/blwMQVKTIPo/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/blwMQVKTIPo",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Heal The World (Official Video)",
+    "capa": "https://i.ytimg.com/vi/BWf-eARnf6U/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/BWf-eARnf6U",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #42: Conduza o trem, CJ!",
-    "capa": "https://i.ytimg.com/vi/xTvtI-8FSeA/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/xTvtI-8FSeA",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Give In To Me (Official Video - Upscaled)",
+    "capa": "https://i.ytimg.com/vi/LJ7qXHjxj_0/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/LJ7qXHjxj_0",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #43: Pilotando com o MOUSE, o que pode dar errado???",
-    "capa": "https://i.ytimg.com/vi/8MZKsviG5eI/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/8MZKsviG5eI",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Who Is It (Official Video - Upscaled)",
+    "capa": "https://i.ytimg.com/vi/PfrV_6yWbEg/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/PfrV_6yWbEg",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #44: Capotando um TREM",
-    "capa": "https://i.ytimg.com/vi/hEGFLwyeOXU/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/hEGFLwyeOXU",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Gone Too Soon (Official Video)",
+    "capa": "https://i.ytimg.com/vi/IcNamirwTaY/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/IcNamirwTaY",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #45: Cosplay de Big Smoke",
-    "capa": "https://i.ytimg.com/vi/hspqh3rQV0Q/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/hspqh3rQV0Q",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson, Janet Jackson - Scream (Official Video)",
+    "capa": "https://i.ytimg.com/vi/0P4A1K4lXDo/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/0P4A1K4lXDo",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #46: Guindaste de Super-Ímã pega DEFUNTO? 🤔",
-    "capa": "https://i.ytimg.com/vi/T2hFQI7KIjU/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/T2hFQI7KIjU",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - You Are Not Alone (Official Video)",
+    "capa": "https://i.ytimg.com/vi/pAyKJAtDNCw/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/pAyKJAtDNCw",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #47: A Saga do Último Carro!",
-    "capa": "https://i.ytimg.com/vi/s_j2A9hlBqM/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/s_j2A9hlBqM",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Earth Song (Official Video)",
+    "capa": "https://i.ytimg.com/vi/XAi3VTSdTxU/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/XAi3VTSdTxU",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #48: As Fotos Secretas de San Fierro",
-    "capa": "https://i.ytimg.com/vi/-t-4dZF5_4o/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/-t-4dZF5_4o",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - They Don't Care About Us",
+    "capa": "https://i.ytimg.com/vi/QNJL6nfu__Q/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/QNJL6nfu__Q",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #49: A Pior Empresa de Manobristas do Mundo",
-    "capa": "https://i.ytimg.com/vi/eBQsrndPElc/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/eBQsrndPElc",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Stranger In Moscow (Official Video)",
+    "capa": "https://i.ytimg.com/vi/pEEMi2j6lYE/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/pEEMi2j6lYE",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #50: Eu Capotei um Helicóptero",
-    "capa": "https://i.ytimg.com/vi/0yULVWSPkzU/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/0yULVWSPkzU",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Blood On The Dance Floor (Official Video)",
+    "capa": "https://i.ytimg.com/vi/c3_NntYhzV4/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/c3_NntYhzV4",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #51: Me Ferrando com as Ferraduras",
-    "capa": "https://i.ytimg.com/vi/YCnmlZQXuso/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/YCnmlZQXuso",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Ghosts (Official Video - Shortened Version)",
+    "capa": "https://i.ytimg.com/vi/Xh9Cp4rd7mI/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/Xh9Cp4rd7mI",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #52: De volta a Los Santos, agora pra sempre!",
-    "capa": "https://i.ytimg.com/vi/hH0bz_3PDz4/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/hH0bz_3PDz4",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - You Rock My World (Official Video)",
+    "capa": "https://i.ytimg.com/vi/1-7ABIM2qjU/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/1-7ABIM2qjU",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #53: Penúltimas Missões + Pichações e Territórios!!",
-    "capa": "https://i.ytimg.com/vi/LI5v_YajpGM/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/LI5v_YajpGM",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - Cry (Official Video)",
+    "capa": "https://i.ytimg.com/vi/mj3MfUR35CM/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/mj3MfUR35CM",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   },
   {
-    "titulo": "GTA San Andreas - #54: O FINAL 100% HOLLYWOODIANO!",
-    "capa": "https://i.ytimg.com/vi/-q-U86SGj34/hqdefault.jpg",
-    "link": "https://www.youtube.com/embed/-q-U86SGj34",
-    "categoria": "GTA San Andreas: 7 Anos Depois"
+    "subcategoria": "Videoclipes",
+    "titulo": "Michael Jackson - One More Chance (Official Video)",
+    "capa": "https://i.ytimg.com/vi/-owpIWQMd80/hqdefault.jpg",
+    "link": "https://www.youtube.com/embed/-owpIWQMd80",
+    "categoria": "Michael Jackson Music Videos Chronologically"
   }
 ]
