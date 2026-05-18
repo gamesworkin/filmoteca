@@ -1,14 +1,15 @@
 const CREDENTIALS = { user: "admin", pass: "admin123" };
-const SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutos em milissegundos
+const SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutos
 
 let allVideos = [];
 let currentPlaylist = [];
 let currentIndex = -1;
 
+// Auxiliar para chaves com ou sem acento
 function getSafeTitle(v) { return v.título || v.titulo || "Sem Título"; }
 
 document.addEventListener("DOMContentLoaded", () => {
-    checkSessionTimeout();
+    checkSession();
 
     const sidebar = document.getElementById("sidebar");
     document.getElementById("toggle-menu").addEventListener("click", () => sidebar.classList.toggle("collapsed"));
@@ -20,18 +21,17 @@ document.addEventListener("DOMContentLoaded", () => {
             (v.categoria || "").toLowerCase().includes(term) || 
             (v.subcategoria || "").toLowerCase().includes(term)
         );
-        renderGrid(filtered, "Resultado: " + term);
+        renderGrid(filtered, "Pesquisa: " + term);
     });
 
     document.getElementById("login-form").addEventListener("submit", (e) => {
         e.preventDefault();
-        if(document.getElementById("username").value === CREDENTIALS.user && 
-           document.getElementById("password").value === CREDENTIALS.pass) {
-            
-            const now = new Date().getTime();
+        const u = document.getElementById("username").value;
+        const p = document.getElementById("password").value;
+        
+        if(u === CREDENTIALS.user && p === CREDENTIALS.password) {
             localStorage.setItem("session_active", "true");
-            localStorage.setItem("session_start", now);
-            
+            localStorage.setItem("session_start", new Date().getTime());
             initApp();
         } else {
             document.getElementById("login-error").style.display = "block";
@@ -41,14 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if(localStorage.getItem("session_active") === "true") initApp();
 });
 
-// Lógica de Expiração de Login
-function checkSessionTimeout() {
-    const sessionStart = localStorage.getItem("session_start");
-    if (sessionStart) {
-        const now = new Date().getTime();
-        if (now - sessionStart > SESSION_TIMEOUT) {
-            logout();
-        }
+function checkSession() {
+    const start = localStorage.getItem("session_start");
+    if(start && (new Date().getTime() - start > SESSION_TIMEOUT)) {
+        logout();
     }
 }
 
@@ -64,35 +60,32 @@ async function initApp() {
     document.getElementById("main-content").classList.remove("hidden");
     
     try {
-        const pathName = window.location.pathname;
-        const basePath = pathName.substring(0, pathName.lastIndexOf('/')) + '/';
-        const jsonUrl = window.location.origin + basePath + 'videos.json';
+        const path = window.location.pathname;
+        const basePath = path.substring(0, path.lastIndexOf('/')) + '/';
+        const url = window.location.origin + basePath + 'videos.json';
 
-        const res = await fetch(jsonUrl + "?t=" + new Date().getTime());
+        const res = await fetch(url + "?t=" + new Date().getTime());
         allVideos = await res.json();
         
         buildSidebar(allVideos);
         renderGrid(allVideos, 'Início');
         setupModal();
-    } catch (error) {
-        console.error("Erro JSON:", error);
-    }
+    } catch (e) { console.error("Erro JSON:", e); }
 }
 
-// Menu Lateral: Apenas navega se clicar.
 function buildSidebar(videos) {
     const menu = document.getElementById("sidebar-menu");
     const cats = [...new Set(videos.map(v => v.categoria).filter(Boolean))];
     
-    menu.innerHTML = `<div class="category-item" onclick="resetToHome()"><span><i class="fa-solid fa-house"></i> Início</span></div>`;
+    menu.innerHTML = `<div class="category-item" onclick="resetHome()"><span><i class="fa-solid fa-house"></i> Início</span></div>`;
     
     cats.forEach(cat => {
         const group = document.createElement("div");
         group.className = "menu-category-group";
         
-        const catBtn = document.createElement("div");
-        catBtn.className = "category-item";
-        catBtn.innerHTML = `<span><i class="fa-solid fa-folder"></i> ${cat}</span> <i class="fa-solid fa-chevron-down chevron"></i>`;
+        const btn = document.createElement("div");
+        btn.className = "category-item";
+        btn.innerHTML = `<span><i class="fa-solid fa-folder"></i> ${cat}</span> <i class="fa-solid fa-chevron-down chevron"></i>`;
         
         const subList = document.createElement("ul");
         subList.className = "subcategory-list hidden";
@@ -101,54 +94,48 @@ function buildSidebar(videos) {
         subCats.forEach(sub => {
             const li = document.createElement("li");
             li.innerText = sub;
-            li.onclick = (e) => {
-                e.stopPropagation();
-                // Apenas renderiza no corpo se CLICAR na subcategoria
-                filterSub(cat, sub);
-            };
+            li.onclick = (e) => { e.stopPropagation(); filterSub(cat, sub); };
             subList.appendChild(li);
         });
 
-        catBtn.onclick = () => {
+        btn.onclick = () => {
             subList.classList.toggle("hidden");
-            catBtn.classList.toggle("expanded");
-            // Apenas renderiza no corpo se CLICAR na categoria
-            filterCat(cat);
+            btn.classList.toggle("expanded");
+            filterCat(cat); // Só renderiza no corpo se clicar
         };
 
-        group.appendChild(catBtn);
+        group.appendChild(btn);
         group.appendChild(subList);
         menu.appendChild(group);
     });
 }
 
-function resetToHome() {
+function resetHome() {
     document.getElementById("search-input").value = "";
     renderGrid(allVideos, 'Início');
 }
 
-// Renderização Principal do Site
 function renderGrid(videos, title) {
     document.getElementById("current-view-title").innerText = title;
     const grid = document.getElementById("categories-grid");
     grid.innerHTML = "";
 
-    const catGroups = {};
+    const groups = {};
     videos.forEach(v => {
-        if(!catGroups[v.categoria]) catGroups[v.categoria] = [];
-        catGroups[v.categoria].push(v);
+        if(!groups[v.categoria]) groups[v.categoria] = [];
+        groups[v.categoria].push(v);
     });
 
-    for(let catName in catGroups) {
-        const catVideos = catGroups[catName];
+    for(let name in groups) {
+        const vids = groups[name];
         const row = document.createElement("div");
         row.className = "category-row";
         row.innerHTML = `
             <div class="row-header" data-expanded="false">
-                <img src="${catVideos[0].capa}" class="row-cover-preview">
+                <img src="${vids[0].capa}" class="row-cover-preview">
                 <div class="row-info">
-                    <h2>${catName}</h2>
-                    <p>${catVideos.length} vídeos — <span class="status-icon"><i class="fa-solid fa-chevron-down"></i></span></p>
+                    <h2>${name}</h2>
+                    <p>${vids.length} vídeos — <i class="fa-solid fa-chevron-down"></i></p>
                 </div>
             </div>
             <div class="sub-container hidden"></div>
@@ -164,7 +151,7 @@ function renderGrid(videos, title) {
                 subDiv.innerHTML = "";
                 header.setAttribute("data-expanded", "false");
             } else {
-                renderSubRows(catVideos, subDiv);
+                renderSubRows(vids, subDiv);
                 subDiv.classList.remove("hidden");
                 header.setAttribute("data-expanded", "true");
             }
@@ -189,7 +176,7 @@ function renderSubRows(videos, container) {
             <div class="row-header" data-expanded="false">
                 <div class="row-info">
                     <h2><i class="fa-solid fa-caret-right"></i> ${sName}</h2>
-                    <p>${sVids.length} vídeos</p>
+                    <p>${sVids.length} itens</p>
                 </div>
             </div>
             <div class="v-grid hidden"></div>
@@ -208,7 +195,7 @@ function renderSubRows(videos, container) {
                 sVids.forEach(vid => {
                     const card = document.createElement("div");
                     card.className = "video-card";
-                    card.innerHTML = `<img src="${vid.capa}" class="video-thumb"><div class="video-info" title="${getSafeTitle(vid)}">${getSafeTitle(vid)}</div>`;
+                    card.innerHTML = `<img src="${vid.capa}" class="video-thumb"><div class="video-info">${getSafeTitle(vid)}</div>`;
                     card.onclick = (ev) => { ev.stopPropagation(); openPlayer(vid, sVids); };
                     vGrid.appendChild(card);
                 });
@@ -223,7 +210,6 @@ function renderSubRows(videos, container) {
 function filterCat(c) { renderGrid(allVideos.filter(v => v.categoria === c), c); }
 function filterSub(c, s) { renderGrid(allVideos.filter(v => v.categoria === c && v.subcategoria === s), s); }
 
-// PLAYER
 function openPlayer(video, playlist) {
     currentPlaylist = playlist;
     currentIndex = playlist.findIndex(v => v.link === video.link);
