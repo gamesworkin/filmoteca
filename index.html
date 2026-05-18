@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CinePrivate V5.1 - Streaming Pessoal Universal</title>
+    <title>CinePrivate V6 - Navegação em Cascata</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body oncontextmenu="return false;">
+<body>
 
-    <!-- TELA DE LOGIN -->
     <div id="login-screen" class="login-container">
         <div class="login-box">
             <h2><i class="fa-solid fa-bolt"></i> CinePrivate</h2>
@@ -28,10 +27,7 @@
         </div>
     </div>
 
-    <!-- CONTEÚDO PRINCIPAL -->
     <div id="main-content" class="main-wrapper hidden">
-        
-        <!-- MENU LATERAL RETRÁTIL -->
         <aside id="sidebar" class="sidebar">
             <div class="sidebar-toggle" id="toggle-menu">
                 <i class="fa-solid fa-bars"></i>
@@ -45,9 +41,7 @@
             </div>
         </aside>
 
-        <!-- ÁREA DOS VÍDEOS -->
         <main class="content-area">
-            <!-- BARRA DE PESQUISA SUPERIOR -->
             <div class="top-search-bar">
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -59,21 +53,15 @@
                 <h1 id="current-view-title">Início</h1>
             </header>
             
-            <!-- Onde ficam listadas as capas iniciais das categorias -->
             <section id="categories-grid" class="categories-grid"></section>
         </main>
     </div>
 
-    <!-- MODAL DO PLAYER UNIVERSAL (HÍBRIDO) -->
     <div id="video-modal" class="video-modal hidden">
         <div class="modal-backdrop"></div>
         <div class="modal-content">
             <button id="close-modal" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
-            
-            <div id="player-wrapper" class="player-container">
-                <!-- Conteúdo injetado dinamicamente via JS -->
-            </div>
-
+            <div id="player-wrapper" class="player-container"></div>
             <div class="player-controls-bar">
                 <h3 id="modal-video-title">Título</h3>
                 <div class="controls-buttons">
