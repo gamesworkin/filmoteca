@@ -1,20 +1,14 @@
 const CREDENTIALS = { user: "admin", pass: "admin123" };
 let allVideos = [];
-let activeFilterVideos = []; 
 let currentPlaylist = [];
 let currentIndex = -1;
 
-// Auxiliar para evitar undefined em títulos
-function getSafeTitle(video) {
-    return video.título || video.titulo || "Sem Título";
-}
+function getSafeTitle(v) { return v.título || v.titulo || "Sem Título"; }
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Menu Retrátil
     const sidebar = document.getElementById("sidebar");
     document.getElementById("toggle-menu").addEventListener("click", () => sidebar.classList.toggle("collapsed"));
 
-    // Pesquisa Universal
     document.getElementById("search-input").addEventListener("input", (e) => {
         const term = e.target.value.toLowerCase().trim();
         const filtered = allVideos.filter(v => 
@@ -22,10 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
             (v.categoria || "").toLowerCase().includes(term) || 
             (v.subcategoria || "").toLowerCase().includes(term)
         );
-        renderGrid(filtered, "Resultados da Pesquisa");
+        renderGrid(filtered, "Busca: " + term);
     });
 
-    // Login
     document.getElementById("login-form").addEventListener("submit", (e) => {
         e.preventDefault();
         if(document.getElementById("username").value === CREDENTIALS.user && 
@@ -61,25 +54,51 @@ async function initApp() {
         renderGrid(allVideos, 'Início');
         setupModal();
     } catch (error) {
-        console.error("Erro ao carregar banco de dados JSON", error);
+        console.error("Erro JSON:", error);
     }
 }
 
-// Sidebar permanece igual às versões anteriores
+// SIDEBAR COM EXPANSÃO/RECOLHIMENTO
 function buildSidebar(videos) {
     const menu = document.getElementById("sidebar-menu");
     const cats = [...new Set(videos.map(v => v.categoria).filter(Boolean))];
-    menu.innerHTML = `<div class="category-title-link" onclick="resetToHome()"><i class="fa-solid fa-house"></i> <span>Início</span></div>`;
+    
+    menu.innerHTML = `<div class="category-item" onclick="resetToHome()"><span><i class="fa-solid fa-house"></i> Início</span></div>`;
     
     cats.forEach(cat => {
+        const group = document.createElement("div");
+        group.className = "menu-category-group";
+        
+        const catBtn = document.createElement("div");
+        catBtn.className = "category-item";
+        catBtn.innerHTML = `<span><i class="fa-solid fa-folder"></i> ${cat}</span> <i class="fa-solid fa-chevron-down chevron"></i>`;
+        
+        const subList = document.createElement("ul");
+        subList.className = "subcategory-list hidden";
+        
         const subCats = [...new Set(videos.filter(v => v.categoria === cat).map(v => v.subcategoria).filter(Boolean))];
-        let html = `<div class="category-title-link" onclick="filterCat('${cat}')"><i class="fa-solid fa-folder"></i> <span>${cat}</span></div>`;
-        html += `<ul class="subcategory-list">`;
         subCats.forEach(sub => {
-            html += `<li onclick="filterSub('${cat}', '${sub}')">${sub}</li>`;
+            const li = document.createElement("li");
+            li.innerText = sub;
+            li.onclick = (e) => {
+                e.stopPropagation();
+                filterSub(cat, sub);
+            };
+            subList.appendChild(li);
         });
-        html += `</ul>`;
-        menu.innerHTML += html;
+
+        catBtn.onclick = () => {
+            const isHidden = subList.classList.contains("hidden");
+            // Fecha outros grupos se quiser (opcional), aqui vamos apenas alternar o atual
+            catBtn.classList.toggle("expanded");
+            subList.classList.toggle("hidden");
+            // Ao clicar no nome da categoria, também filtra no corpo principal
+            filterCat(cat);
+        };
+
+        group.appendChild(catBtn);
+        group.appendChild(subList);
+        menu.appendChild(group);
     });
 }
 
@@ -88,13 +107,12 @@ function resetToHome() {
     renderGrid(allVideos, 'Início');
 }
 
-// NOVO: Renderização em Cascata (Categoria -> Subcategoria -> Vídeo)
-function renderGrid(videos, title = "Vídeos") {
+// CORPO DO SITE EM CASCATA
+function renderGrid(videos, title) {
     document.getElementById("current-view-title").innerText = title;
     const grid = document.getElementById("categories-grid");
     grid.innerHTML = "";
 
-    // Agrupa apenas por CATEGORIA primeiro
     const catGroups = {};
     videos.forEach(v => {
         if(!catGroups[v.categoria]) catGroups[v.categoria] = [];
@@ -103,113 +121,89 @@ function renderGrid(videos, title = "Vídeos") {
 
     for(let catName in catGroups) {
         const catVideos = catGroups[catName];
-        
-        const catRow = document.createElement("div");
-        catRow.className = "category-row";
-        catRow.innerHTML = `
+        const row = document.createElement("div");
+        row.className = "category-row";
+        row.innerHTML = `
             <div class="row-header" data-expanded="false">
                 <img src="${catVideos[0].capa}" class="row-cover-preview">
                 <div class="row-info">
                     <h2>${catName}</h2>
-                    <p>${catVideos.length} vídeos no total — <span class="status-icon">Explorar categoria <i class="fa-solid fa-chevron-down"></i></span></p>
+                    <p>${catVideos.length} vídeos — <span class="status-icon">Ver subcategorias <i class="fa-solid fa-chevron-down"></i></span></p>
                 </div>
             </div>
-            <div class="subcategories-container hidden"></div>
+            <div class="sub-container hidden"></div>
         `;
 
-        const header = catRow.querySelector(".row-header");
-        const subContainer = catRow.querySelector(".subcategories-container");
+        const header = row.querySelector(".row-header");
+        const subDiv = row.querySelector(".sub-container");
 
-        header.addEventListener("click", () => {
-            const isExpanded = header.getAttribute("data-expanded") === "true";
-            if(isExpanded) {
-                subContainer.classList.add("hidden");
-                subContainer.innerHTML = "";
+        header.onclick = () => {
+            const exp = header.getAttribute("data-expanded") === "true";
+            if(exp) {
+                subDiv.classList.add("hidden");
+                subDiv.innerHTML = "";
                 header.setAttribute("data-expanded", "false");
             } else {
-                renderSubcategories(catVideos, subContainer);
-                subContainer.classList.remove("hidden");
+                renderSubRows(catVideos, subDiv);
+                subDiv.classList.remove("hidden");
                 header.setAttribute("data-expanded", "true");
             }
-        });
-
-        grid.appendChild(catRow);
+        };
+        grid.appendChild(row);
     }
 }
 
-// Renderiza o segundo nível (Subcategorias dentro de uma Categoria)
-function renderSubcategories(videos, container) {
-    container.innerHTML = "";
-    const subGroups = {};
+function renderSubRows(videos, container) {
+    const subs = {};
     videos.forEach(v => {
-        const subName = v.subcategoria || "Geral";
-        if(!subGroups[subName]) subGroups[subName] = [];
-        subGroups[subName].push(v);
+        const s = v.subcategoria || "Geral";
+        if(!subs[s]) subs[s] = [];
+        subs[s].push(v);
     });
 
-    for(let subName in subGroups) {
-        const subVideos = subGroups[subName];
-        const subRow = document.createElement("div");
-        subRow.className = "subcategory-row";
-        subRow.innerHTML = `
+    for(let sName in subs) {
+        const sVids = subs[sName];
+        const sRow = document.createElement("div");
+        sRow.className = "subcategory-row";
+        sRow.innerHTML = `
             <div class="row-header" data-expanded="false">
                 <div class="row-info">
-                    <h2><i class="fa-solid fa-caret-right"></i> ${subName}</h2>
-                    <p>${subVideos.length} vídeos nesta seção</p>
+                    <h2><i class="fa-solid fa-caret-right"></i> ${sName}</h2>
+                    <p>${sVids.length} vídeos</p>
                 </div>
             </div>
-            <div class="videos-grid hidden"></div>
+            <div class="v-grid hidden"></div>
         `;
+        const sHeader = sRow.querySelector(".row-header");
+        const vGrid = sRow.querySelector(".v-grid");
 
-        const subHeader = subRow.querySelector(".row-header");
-        const videoGrid = subRow.querySelector(".videos-grid");
-
-        subHeader.addEventListener("click", (e) => {
+        sHeader.onclick = (e) => {
             e.stopPropagation();
-            const isExpanded = subHeader.getAttribute("data-expanded") === "true";
-            if(isExpanded) {
-                videoGrid.classList.add("hidden");
-                videoGrid.innerHTML = "";
-                subHeader.setAttribute("data-expanded", "false");
+            const exp = sHeader.getAttribute("data-expanded") === "true";
+            if(exp) {
+                vGrid.classList.add("hidden");
+                vGrid.innerHTML = "";
+                sHeader.setAttribute("data-expanded", "false");
             } else {
-                renderVideosInGrid(subVideos, videoGrid);
-                videoGrid.classList.remove("hidden");
-                subHeader.setAttribute("data-expanded", "true");
+                sVids.forEach(vid => {
+                    const card = document.createElement("div");
+                    card.className = "video-card";
+                    card.innerHTML = `<img src="${vid.capa}" class="video-thumb"><div class="video-info">${getSafeTitle(vid)}</div>`;
+                    card.onclick = (ev) => { ev.stopPropagation(); openPlayer(vid, sVids); };
+                    vGrid.appendChild(card);
+                });
+                vGrid.classList.remove("hidden");
+                sHeader.setAttribute("data-expanded", "true");
             }
-        });
-
-        container.appendChild(subRow);
+        };
+        container.appendChild(sRow);
     }
 }
 
-// Renderiza o terceiro nível (A grade de vídeos final)
-function renderVideosInGrid(videos, grid) {
-    grid.innerHTML = "";
-    videos.forEach(vid => {
-        const card = document.createElement("div");
-        card.className = "video-card";
-        card.innerHTML = `
-            <img src="${vid.capa}" class="video-thumb">
-            <div class="video-info">${getSafeTitle(vid)}</div>
-        `;
-        card.onclick = (e) => {
-            e.stopPropagation();
-            openPlayer(vid, videos);
-        };
-        grid.appendChild(card);
-    });
-}
+function filterCat(c) { renderGrid(allVideos.filter(v => v.categoria === c), c); }
+function filterSub(c, s) { renderGrid(allVideos.filter(v => v.categoria === c && v.subcategoria === s), s); }
 
-function filterCat(c) { 
-    renderGrid(allVideos.filter(v => v.categoria === c), c); 
-}
-function filterSub(c, s) { 
-    const filtered = allVideos.filter(v => v.categoria === c && v.subcategoria === s);
-    // Para filtro lateral, mostramos direto a subcategoria selecionada
-    renderGrid(filtered, s);
-}
-
-// PLAYER UNIVERSAL
+// PLAYER
 function openPlayer(video, playlist) {
     currentPlaylist = playlist;
     currentIndex = playlist.findIndex(v => v.link === video.link);
@@ -219,28 +213,20 @@ function openPlayer(video, playlist) {
     document.getElementById("modal-video-title").innerText = getSafeTitle(video);
 
     const url = video.link.trim();
-    const isDirectFile = /\.(mp4|webm|ogg|mov|m4v)($|\?)/i.test(url);
-
-    if (isDirectFile) {
+    if (/\.(mp4|webm|ogg|mov)($|\?)/i.test(url)) {
         wrapper.innerHTML = `<video id="main-player" controls autoplay><source src="${url}" type="video/mp4"></video>`;
         wrapper.querySelector('video').onended = () => changeVideo(1);
     } else {
-        let finalUrl = url;
-        if (url.includes("youtube.com") || url.includes("youtu.be")) {
-            finalUrl += (url.includes("?") ? "&" : "?") + "autoplay=1";
-        }
-        wrapper.innerHTML = `<iframe id="main-player" src="${finalUrl}" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+        let fUrl = url;
+        if (url.includes("youtube.com") || url.includes("youtu.be")) fUrl += (url.includes("?") ? "&" : "?") + "autoplay=1";
+        wrapper.innerHTML = `<iframe id="main-player" src="${fUrl}" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
     }
 }
 
-function changeVideo(step) {
-    currentIndex += step;
-    if(currentIndex >= 0 && currentIndex < currentPlaylist.length) {
-        openPlayer(currentPlaylist[currentIndex], currentPlaylist);
-    } else if (currentIndex >= currentPlaylist.length) {
-        alert("Fim da playlist!");
-        closeModal();
-    }
+function changeVideo(s) {
+    currentIndex += s;
+    if(currentIndex >= 0 && currentIndex < currentPlaylist.length) openPlayer(currentPlaylist[currentIndex], currentPlaylist);
+    else closeModal();
 }
 
 function closeModal() {
