@@ -1,61 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmoteca</title>
-    <link rel="icon" type="image/x-icon" href="fav.ico">
+    <title>CinePrivate V5.1 - Streaming Pessoal Universal</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body oncontextmenu="return false;">
+<body>
 
-    <!-- Tela de Login -->
-    <div id="login-screen" class="overlay">
+    <!-- TELA DE LOGIN -->
+    <div id="login-screen" class="login-container">
         <div class="login-box">
-            <img src="logo.svg" alt="Logo" width="150">
-            <h2>Acesso Restrito</h2>
-            <input type="text" id="username" placeholder="Usuário">
-            <input type="password" id="password" placeholder="Senha">
-            <button onclick="checkLogin()">Entrar</button>
-            <p id="login-error" class="error"></p>
+            <h2><i class="fa-solid fa-bolt"></i> CinePrivate</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label>Usuário</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label>Senha</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn-login">Entrar</button>
+                <div id="login-error" class="error-message">Acesso negado.</div>
+            </form>
         </div>
     </div>
 
-    <!-- Conteúdo Principal -->
-    <div id="main-content" class="hidden">
-        <header>
-    <div class="header-content">
-        <!-- Parte 1: Logo -->
-        <div class="logo-area">
-            <span class="logo-text">FILMOTECA</span>
-        </div>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div id="main-content" class="main-wrapper hidden">
+        
+        <!-- MENU LATERAL RETRÁTIL -->
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar-toggle" id="toggle-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="sidebar-content">
+                <div class="sidebar-header">
+                    <h3>Navegação</h3>
+                </div>
+                <nav id="sidebar-menu" class="menu-channels"></nav>
+                <button id="btn-logout" class="btn-logout"><i class="fa-solid fa-power-off"></i> <span>Sair</span></button>
+            </div>
+        </aside>
 
-        <!-- Parte 2: Pesquisa (Centro) -->
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Buscar filmes ou categorias...">
-            <button id="search-btn">🔍</button>
-        </div>
+        <!-- ÁREA DOS VÍDEOS -->
+        <main class="content-area">
+            <!-- BARRA DE PESQUISA SUPERIOR -->
+            <div class="top-search-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search-input" placeholder="Pesquisar por título, categoria ou subcategoria...">
+                </div>
+            </div>
 
-        <!-- Parte 3: Logout (Direita) -->
-        <div class="user-menu">
-            <button class="logout-btn" onclick="logout()">Sair</button>
-        </div>
-    </div>
-</header>
-
-
-
-        <main>
-            <section id="categories-container"></section>
+            <header class="main-header">
+                <h1 id="current-view-title">Início</h1>
+            </header>
+            
+            <!-- Onde ficam listadas as capas iniciais das categorias -->
+            <section id="categories-grid" class="categories-grid"></section>
         </main>
+    </div>
 
-        <!-- Player Modal -->
-        <div id="player-modal" class="overlay hidden">
-            <div class="modal-content">
-                <button class="close-modal" onclick="closePlayer()">×</button>
-                <div id="video-wrapper"></div>
-                <h2 id="modal-title"></h2>
+    <!-- MODAL DO PLAYER UNIVERSAL (HÍBRIDO) -->
+    <div id="video-modal" class="video-modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            
+            <div id="player-wrapper" class="player-container">
+                <!-- Conteúdo injetado dinamicamente via JS -->
+            </div>
+
+            <div class="player-controls-bar">
+                <h3 id="modal-video-title">Título</h3>
+                <div class="controls-buttons">
+                    <button id="prev-video-btn" class="control-btn"><i class="fa-solid fa-backward"></i></button>
+                    <button id="next-video-btn" class="control-btn"><i class="fa-solid fa-forward"></i></button>
+                </div>
             </div>
         </div>
     </div>
