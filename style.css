@@ -43,14 +43,14 @@ body { background-color: var(--bg-main); color: var(--text); overflow: hidden; }
 .search-box input { background: transparent; border: none; color: #fff; width: 100%; outline: none; margin-left: 10px; font-size: 14px; }
 .main-header { margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
 
-/* MOSAICO HORIZONTAL - CATEGORIAS E SUB-CATEGORIAS */
-.main-mosaic-grid {
+/* GRIDS DE MOSAICO */
+.main-mosaic-grid, .sub-mosaic-grid, .videos-mosaic {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 15px;
 }
 
-/* CARDS DE CATEGORIA / SUBCATEGORIA */
+/* CARDS GENÉRICOS (CATEGORIA / SUB / VÍDEO) */
 .mosaic-card {
     background: var(--bg-card);
     border-radius: 8px;
@@ -78,7 +78,7 @@ body { background-color: var(--bg-main); color: var(--text); overflow: hidden; }
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -90,42 +90,22 @@ body { background-color: var(--bg-main); color: var(--text); overflow: hidden; }
     margin-top: 4px;
 }
 
-/* CONTAINER EXPANSÍVEL (OCUPA A LINHA TODA) */
+/* CONTAINER DE EXPANSÃO */
 .expanded-container {
-    grid-column: 1 / -1; /* Força a ocupar todas as colunas da grade */
-    background: #080808;
-    border: 1px dashed #333;
+    grid-column: 1 / -1;
+    background: rgba(20, 20, 20, 0.5);
+    border: 1px solid #222;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     margin: 10px 0;
 }
 
-/* GRIDS DE VÍDEO DENTRO DA EXPANSÃO */
-.videos-mosaic {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 10px;
-}
-
-.video-card {
-    background: #111;
-    border-radius: 6px;
-    overflow: hidden;
-    cursor: pointer;
-    border: 1px solid #222;
-    transition: 0.3s;
-}
-.video-card:hover { border-color: var(--accent); transform: translateY(-3px); }
-
-.video-info {
-    padding: 8px;
-    font-size: 9px;
-    font-weight: 800;
-    text-align: center;
+.exp-title {
+    font-size: 12px;
+    color: var(--accent);
+    margin-bottom: 15px;
     text-transform: uppercase;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-weight: bold;
 }
 
 /* PLAYER MODAL */
