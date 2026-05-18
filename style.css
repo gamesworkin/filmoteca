@@ -41,61 +41,96 @@ body { background-color: var(--bg-main); color: var(--text); overflow: hidden; }
 .top-search-bar { width: 100%; margin-bottom: 20px; }
 .search-box { display: flex; align-items: center; background: #111; border: 1px solid var(--border); padding: 10px 20px; border-radius: 30px; max-width: 400px; }
 .search-box input { background: transparent; border: none; color: #fff; width: 100%; outline: none; margin-left: 10px; font-size: 14px; }
-
 .main-header { margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
 
-/* CASCATA */
-.category-row, .subcategory-row { background: #111; border-radius: 10px; padding: 10px; margin-bottom: 10px; border: 1px solid var(--border); }
-.subcategory-row { margin-left: 15px; border-style: dashed; background: #0c0c0c; }
-.row-header { display: flex; align-items: center; gap: 12px; cursor: pointer; }
-.row-cover-preview { width: 80px; height: 45px; object-fit: cover; border-radius: 4px; }
-.row-info h2 { font-size: 14px; font-weight: 600; }
-.row-info p { color: #444; font-size: 11px; }
-
-/* GRID ESTILO MOSAICO - THUMBS BEM PEQUENAS */
-.videos-grid { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); /* Mosaico compacto */
-    gap: 8px; 
-    margin-top: 10px; 
-    padding-top: 10px; 
-    border-top: 1px solid #222; 
+/* MOSAICO HORIZONTAL - CATEGORIAS E SUB-CATEGORIAS */
+.main-mosaic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px;
 }
 
-.video-card { 
-    background: var(--bg-card); 
-    border-radius: 6px; 
-    overflow: hidden; 
-    cursor: pointer; 
-    transition: 0.3s; 
-    border: 1px solid #222;
-    position: relative;
+/* CARDS DE CATEGORIA / SUBCATEGORIA */
+.mosaic-card {
+    background: var(--bg-card);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
 }
-.video-card:hover { 
-    transform: scale(1.05); 
-    border-color: var(--accent); 
-    z-index: 5;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
-.video-thumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; opacity: 0.8; transition: 0.3s; }
-.video-card:hover .video-thumb { opacity: 1; }
+.mosaic-card:hover { transform: scale(1.05); border-color: var(--accent); }
 
-.video-info { 
-    padding: 6px; 
-    font-size: 9px; 
-    color: #fff; 
-    font-weight: 800; /* Mais ênfase visual no título */
+.card-thumb {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-info h2 {
+    font-size: 11px;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    background: linear-gradient(transparent, rgba(0,0,0,0.9));
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* PLAYER */
+.card-info p {
+    font-size: 9px;
+    color: #555;
+    margin-top: 4px;
+}
+
+/* CONTAINER EXPANSÍVEL (OCUPA A LINHA TODA) */
+.expanded-container {
+    grid-column: 1 / -1; /* Força a ocupar todas as colunas da grade */
+    background: #080808;
+    border: 1px dashed #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* GRIDS DE VÍDEO DENTRO DA EXPANSÃO */
+.videos-mosaic {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 10px;
+}
+
+.video-card {
+    background: #111;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+.video-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+
+.video-info {
+    padding: 8px;
+    font-size: 9px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* PLAYER MODAL */
 .video-modal { position: fixed; inset: 0; z-index: 9999; display: flex; align-items: center; justify-content: center; }
-.modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.97); }
+.modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.98); }
 .modal-content { position: relative; width: 94%; height: 90%; background: #000; border-radius: 8px; display: flex; flex-direction: column; overflow: hidden; border: 1px solid #333; }
 .player-container { flex: 1; }
 .player-container iframe, .player-container video { width: 100%; height: 100%; border: none; }
