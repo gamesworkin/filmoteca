@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CinePrivate V9 - Compact Edition</title>
+    <title>CinePrivate V10 - Mosaico Edition</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,11 +15,11 @@
             <form id="login-form">
                 <div class="input-group">
                     <label>Usuário</label>
-                    <input type="text" id="username" required>
+                    <input type="text" id="username" required autocomplete="username">
                 </div>
                 <div class="input-group">
                     <label>Senha</label>
-                    <input type="password" id="password" required>
+                    <input type="password" id="password" required autocomplete="current-password">
                 </div>
                 <button type="submit" class="btn-login">Entrar</button>
                 <div id="login-error" class="error-message">Acesso negado.</div>
@@ -45,7 +45,7 @@
             <div class="top-search-bar">
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" id="search-input" placeholder="Pesquisar em tudo...">
+                    <input type="text" id="search-input" placeholder="Pesquisar vídeos...">
                 </div>
             </div>
 
